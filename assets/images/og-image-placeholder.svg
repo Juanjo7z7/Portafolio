@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#F2EEE5"/>
+  <text x="80" y="320" font-family="Georgia, serif" font-size="120" fill="#14110F">Juan</text>
+  <text x="80" y="450" font-family="Georgia, serif" font-size="120" font-style="italic" fill="#14110F">José Arbeláez</text>
+  <text x="80" y="540" font-family="monospace" font-size="22" fill="#7A736A" letter-spacing="4">FULL STACK DEVELOPER · MEDELLÍN, COLOMBIA</text>
+  <line x1="80" y1="100" x2="280" y2="100" stroke="#14110F" stroke-width="2"/>
+  <text x="80" y="80" font-family="monospace" font-size="18" fill="#14110F" letter-spacing="3">PORTAFOLIO · 2026</text>
+</svg>

@@ -3,18 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Full Stack Developer con +3 años de experiencia construyendo aplicaciones web escalables, integrando APIs y creando interfaces modernas centradas en el usuario.">
-  <meta name="author" content="Juan José Arbeláez Castro">
-  <meta property="og:title" content="Juan José Arbeláez — Full Stack Developer">
-<meta property="og:description" content="Construyo aplicaciones web eficientes, conectando datos, servicios e interfaces para crear soluciones claras y escalables.">
-  <title>Juan José Arbeláez — Full Stack Developer</title>
+  <meta name="theme-color" content="#F2EEE5">
 
+  <!-- SEO -->
+  <title>Juan José Arbeláez — Full Stack Developer · Medellín</title>
+  <meta name="description" content="Full Stack Developer con +3 años construyendo plataformas web para el sector eléctrico. Especializado en .NET (C#), Python, JavaScript y APIs REST. Disponible en Medellín, Colombia.">
+  <meta name="author" content="Juan José Arbeláez Castro">
+  <meta name="keywords" content="Full Stack Developer Medellín, Desarrollador Web Colombia, .NET C#, Python, JavaScript, APIs REST, SQL, Juan José Arbeláez">
+  <link rel="canonical" href="https://juanjo7z7.github.io/Portafolio/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_CO">
+  <meta property="og:title" content="Juan José Arbeláez — Full Stack Developer">
+  <meta property="og:description" content="Construyo plataformas web para el sector eléctrico. +3 años de experiencia con .NET, Python y JavaScript. Medellín, Colombia.">
+  <meta property="og:url" content="https://juanjo7z7.github.io/Portafolio/">
+  <meta property="og:image" content="assets/images/projects/apolo-dashboard.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Juan José Arbeláez — Full Stack Developer">
+  <meta name="twitter:description" content="Construyo plataformas web para el sector eléctrico. +3 años de experiencia con .NET, Python y JavaScript.">
+  <meta name="twitter:image" content="assets/images/projects/apolo-dashboard.png">
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,300;1,6..72,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="assets/styles.css">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.86em' x='6' font-size='90' font-family='Georgia' font-style='italic'%3EJ%3C/text%3E%3C/svg%3E">
+
+  <!-- JSON-LD Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Juan José Arbeláez Castro",
+    "jobTitle": "Full Stack Developer",
+    "email": "mailto:juanjo2arbe@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Medellín",
+      "addressCountry": "CO"
+    },
+    "knowsAbout": ["JavaScript", ".NET", "C#", "Python", "SQL", "APIs REST", "HTML", "CSS"]
+  }
+  </script>
 </head>
 <body>
 
@@ -32,8 +69,10 @@
       </a>
       <ol class="nav-index">
         <li><a href="#about"><span class="num">§01</span><span class="lbl">Perfil</span></a></li>
-        <li><a href="#work"><span class="num">§02</span><span class="lbl">Proyectos</span></a></li>
-        <li><a href="#skills"><span class="num">§03</span><span class="lbl">Stack</span></a></li>
+        <li><a href="#experience"><span class="num">§02</span><span class="lbl">Experiencia</span></a></li>
+        <li><a href="#work"><span class="num">§03</span><span class="lbl">Proyectos</span></a></li>
+        <li><a href="#skills"><span class="num">§04</span><span class="lbl">Stack</span></a></li>
+        <li><a href="#contact"><span class="num">§05</span><span class="lbl">Contacto</span></a></li>
       </ol>
     </div>
   </nav>
@@ -46,27 +85,55 @@
       <span class="hero-meta-tag">Portafolio · 2026</span>
       <span class="hero-meta-rule" aria-hidden="true"></span>
       <span class="hero-meta-loc">Medellín · Colombia</span>
+      <span class="hero-meta-status">
+        <span class="status-dot" aria-hidden="true"></span>
+        Disponible
+      </span>
     </div>
 
-    <h1 class="hero-name">
-      <span class="hero-name-line">Juan</span>
-      <span class="hero-name-line hero-name-italic">José</span>
-      <span class="hero-name-line">Arbeláez</span>
-    </h1>
+    <div class="hero-grid">
+      <div class="hero-text">
+        <h1 class="hero-name">
+          <span class="hero-name-line">Juan</span>
+          <span class="hero-name-line hero-name-italic">José</span>
+          <span class="hero-name-line">Arbeláez</span>
+        </h1>
 
-    <div class="hero-statement">
-      <p class="hero-role">Full Stack Developer</p>
-      <p class="hero-pitch">
-        Full Stack Developer con más de 3 años de experiencia construyendo aplicaciones web escalables y de alto impacto. Me enfoco en crear interfaces intuitivas, integrar servicios y transformar ideas complejas en soluciones claras, eficientes y centradas en el usuario.
-      </p>
+        <div class="hero-statement">
+          <p class="hero-role">Full Stack Developer</p>
+          <p class="hero-pitch">
+            Full Stack Developer con más de 3 años de experiencia construyendo aplicaciones web escalables y de alto impacto. Me enfoco en crear interfaces intuitivas, integrar servicios y transformar ideas complejas en soluciones claras, eficientes y centradas en el usuario.
+          </p>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#work" class="hero-link hero-link-primary">
+            <span class="hero-link-arrow" aria-hidden="true">↓</span>
+            Ver proyectos
+          </a>
+          <a href="#contact" class="hero-link hero-link-secondary">
+            Contáctame
+          </a>
+          <!-- TODO Juan José: reemplazar href con la URL real del CV PDF (subir a assets/files/CV-Juan-Jose-Arbelaez.pdf) -->
+          <a href="assets/files/CV-Juan-Jose-Arbelaez.pdf" class="hero-link hero-link-secondary" download>
+            Descargar CV
+          </a>
+        </div>
+
+        <ul class="hero-social" aria-label="Redes y enlaces">
+          <!-- TODO Juan José: confirmar / reemplazar usuarios reales -->
+          <li><a href="https://github.com/Juanjo7z7" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/juan-jos%C3%A9-arbelaez-castro-130203265/" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a></li>
+          <li><a href="https://wa.me/573024668570" target="_blank" rel="noopener" aria-label="WhatsApp">WhatsApp</a></li>
+          <li><a href="mailto:juanjo2arbe@gmail.com" aria-label="Email">Email</a></li>
+        </ul>
+      </div>
+
     </div>
 
     <div class="hero-foot">
-      <a href="#work" class="hero-link">
-        <span class="hero-link-arrow" aria-hidden="true">↓</span>
-        Ver proyectos
-      </a>
-      <span class="hero-foot-meta">FOLIO 01 / 04</span>
+      <span class="hero-foot-meta">FOLIO 01 / 05</span>
+      <span class="hero-foot-meta hero-foot-meta-end">Scroll ↓</span>
     </div>
   </header>
 
@@ -82,12 +149,16 @@
 
     <div class="section-grid">
       <div class="section-headline">
-        <h2 class="display"> 
-          Full stack enfocado <br>
-          en <em>crear soluciones escalables.</em>
+        <h2 class="display">
+          Desarrollo software para<br>
+          <em>operar infraestructura</em><br>
+          que la mayoría nunca ve.
         </h2>
         <p class="lead">
-          Más de 3 años desarrollando aplicaciones web end-to-end, desde la capa de datos y servicios backend hasta interfaces intuitivas que permiten visualizar y gestionar información en tiempo real. Experiencia integrando APIs, optimizando el rendimiento y trabajando con metodologías ágiles. 
+          Hace más de 3 años construyo aplicaciones web end-to-end para el sector eléctrico colombiano. Trabajo donde un error no es solo un bug: puede significar que un operador no vea a tiempo una falla en una subestación. Eso me obliga a escribir código claro, probado y mantenible.
+        </p>
+        <p class="lead">
+          Vengo de formación técnica (SENA y Politécnico Mayor) y aprendí en el oficio: leyendo código, rompiendo cosas en staging y entendiendo por qué los sistemas reales nunca se parecen a los tutoriales.
         </p>
       </div>
 
@@ -95,48 +166,149 @@
         <li class="principle">
           <span class="principle-num">01</span>
           <h3>Frontend</h3>
-          <p>Interfaces modernas, enfocadas en experiencia de usuario, consumo de APIs y visualización eficiente de información.</p>
+          <p>Interfaces para operadores: densidad de información alta, jerarquía visual clara y actualizaciones en tiempo real sin perder rendimiento.</p>
         </li>
         <li class="principle">
           <span class="principle-num">02</span>
           <h3>Backend</h3>
-          <p>Servicios en .NET Framework (C#) y Python. Diseño y consumo de APIs REST para procesamiento e integración de datos.</p>
+          <p>Servicios en .NET Framework (C#) y Python. Diseño endpoints REST pensados en el consumo real del frontend, no en cómo "queda más limpio" en el servidor.</p>
         </li>
         <li class="principle">
           <span class="principle-num">03</span>
           <h3>Datos</h3>
-          <p>Consultas SQL para análisis y reportes. Modelado de datos, optimización de queries, y trabajo con bases relacionales y NoSQL.</p>
+          <p>SQL para consultas analíticas, modelado relacional, optimización de queries pesadas y trabajo con datos de simulación y operación real.</p>
         </li>
         <li class="principle">
           <span class="principle-num">04</span>
           <h3>Producto</h3>
-          <p>Definición de interfaces, estructura visual y mejora continua basada en necesidades del usuario.</p>
+          <p>Participo en la definición de mockups y qué información mostrar. Lo técnico solo sirve si el operador puede usarlo bajo presión.</p>
         </li>
       </ol>
     </div>
   </section>
 
   <!-- ========================================================================
-       §02 — PROYECTOS
+       §02 — EXPERIENCIA
+       ==================================================================== -->
+  <section class="section section-experience" id="experience">
+    <div class="section-mark">
+      <span class="section-num">§02</span>
+      <span class="section-rule" aria-hidden="true"></span>
+      <span class="section-tag">Experiencia</span>
+    </div>
+
+    <div class="experience-intro">
+      <h2 class="display">
+        Trayectoria<br>
+        <em>profesional</em>.
+      </h2>
+      <p class="lead">
+        Cronología de roles, responsabilidades y entregables. Cada posición incluye el contexto técnico y el impacto concreto en producto.
+      </p>
+    </div>
+
+    <ol class="timeline">
+      <li class="timeline-item">
+        <div class="timeline-period">
+          <span class="timeline-date">2022 — Presente</span>
+          <span class="timeline-loc">Medellín · Híbrido</span>
+        </div>
+        <div class="timeline-body">
+          <h3 class="timeline-role">Full Stack Developer</h3>
+          <p class="timeline-company">Movi Software</p>
+          <p class="timeline-summary">
+            Desarrollo de plataforma web para monitoreo y control de sistemas eléctricos en subestaciones. Participación en frontend, backend y procesamiento de datos.
+          </p>
+          <ul class="timeline-bullets">
+            <li>Diseño e implementación de interfaces de monitoreo en tiempo real con JavaScript, HTML y CSS.</li>
+            <li>Servicios backend en .NET Framework (C#) y Python para procesamiento de datos de simulación y operación real.</li>
+            <li>Diseño y consumo de APIs REST para integrar capas de datos, lógica y visualización.</li>
+            <li>Consultas SQL para análisis, reportes y agregación de mediciones.</li>
+            <li>Trabajo en equipo bajo Scrum: refinamiento, planning, dailies, revisiones cruzadas en pull requests.</li>
+          </ul>
+          <ul class="timeline-stack">
+            <li>.NET (C#)</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>SQL Server</li>
+            <li>API REST</li>
+            <li>Git</li>
+            <li>Scrum</li>
+          </ul>
+        </div>
+      </li>
+
+      <!-- TODO Juan José: agregar formación o experiencias anteriores aquí
+           Plantilla:
+      <li class="timeline-item">
+        <div class="timeline-period">
+          <span class="timeline-date">AÑO — AÑO</span>
+          <span class="timeline-loc">CIUDAD</span>
+        </div>
+        <div class="timeline-body">
+          <h3 class="timeline-role">ROL</h3>
+          <p class="timeline-company">EMPRESA / INSTITUCIÓN</p>
+          <p class="timeline-summary">RESUMEN.</p>
+          <ul class="timeline-bullets"><li>BULLET</li></ul>
+          <ul class="timeline-stack"><li>STACK</li></ul>
+        </div>
+      </li>
+      -->
+
+      <li class="timeline-item">
+        <div class="timeline-period">
+          <span class="timeline-date">Formación técnica</span>
+          <span class="timeline-loc">Colombia</span>
+        </div>
+        <div class="timeline-body">
+          <h3 class="timeline-role">Técnico en Programación de Aplicaciones</h3>
+          <p class="timeline-company">SENA — Servicio Nacional de Aprendizaje</p>
+          <p class="timeline-summary">
+            Fundamentos de programación, bases de datos, desarrollo de aplicaciones y prácticas en proyectos académicos y reales.
+          </p>
+        </div>
+      </li>
+
+      <li class="timeline-item">
+        <div class="timeline-period">
+          <span class="timeline-date">Formación técnica</span>
+          <span class="timeline-loc">Medellín</span>
+        </div>
+        <div class="timeline-body">
+          <h3 class="timeline-role">Técnico en Asistencia en Sistemas</h3>
+          <p class="timeline-company">Politécnico Mayor</p>
+          <p class="timeline-summary">
+            Bases de sistemas, soporte, redes y primera aproximación al desarrollo de software.
+          </p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ========================================================================
+       §03 — PROYECTOS (Movi Software)
        ==================================================================== -->
   <section class="section section-work" id="work">
     <div class="section-mark">
-      <span class="section-num">§02</span>
+      <span class="section-num">§03</span>
       <span class="section-rule" aria-hidden="true"></span>
       <span class="section-tag">Proyectos</span>
     </div>
 
     <div class="work-intro">
       <h2 class="display">
-        Plataforma de monitoreo<br>
+        APOLO — plataforma de monitoreo<br>
         para <em>subestaciones eléctricas</em>.
       </h2>
       <p class="lead">
-        En Movi Software desarrollo una plataforma web para el monitoreo y control de sistemas
-        eléctricos en subestaciones. Estos son dos componentes representativos del trabajo:
-        uno en la capa de visualización y otro en el procesamiento de datos.
+        Producto desarrollado en Movi Software para Celsia. Centraliza el monitoreo de cientos de equipos distribuidos por regiones (Valle, Tolima, Caribe), permite revisar eventos de falla y analizar comtrades. Estas son dos vistas representativas del trabajo: la capa de visualización y la de procesamiento.
       </p>
     </div>
+
+    <figure class="work-hero">
+      <img src="assets/images/projects/apolo-dashboard.png" alt="Dashboard principal de APOLO mostrando selector de zonas y métricas de equipos" loading="lazy">
+      <figcaption>APOLO · Dashboard principal · estado de 1.578 equipos distribuidos en zonas.</figcaption>
+    </figure>
 
     <div class="cases">
       <article class="case">
@@ -155,19 +327,21 @@
 
         <div class="case-body">
           <p>
-            Desarrollo de una interfaz web para visualizar el estado de equipos electrónicos
-            distribuidos en múltiples subestaciones, consumiendo datos en tiempo real desde
-            servicios .NET vía APIs REST. Participé en la definición de mockups y en el diseño
-            de la información en pantalla, decidiendo qué variables mostrar, cómo agruparlas y
-            qué jerarquía visual usar para que el operador pueda diagnosticar rápidamente.
+            Desarrollo de una interfaz web para visualizar el estado de equipos electrónicos distribuidos en múltiples subestaciones, consumiendo datos en tiempo real desde servicios .NET vía APIs REST. Participé en la definición de mockups y en el diseño de la información en pantalla, decidiendo qué variables mostrar, cómo agruparlas y qué jerarquía visual usar para que el operador pueda diagnosticar rápidamente.
           </p>
+
+          <figure class="case-figure">
+            <img src="assets/images/projects/apolo-equipos.png" alt="Listado de equipos eléctricos (7UT86, Noja Power) con tipo, nomenclatura, última actualización e históricos" loading="lazy">
+            <figcaption>Listado de equipos · tipo, nomenclatura, estado y acceso a históricos.</figcaption>
+          </figure>
+
           <div class="case-takeaway">
             <span class="case-takeaway-label">Reto técnico</span>
-            <p>Renderizar múltiples variables y estados en una misma vista sin saturar al usuario, manteniendo el rendimiento del frontend ante actualizaciones frecuentes.</p>
+            <p>Renderizar cientos de equipos con sus estados, archivos y accesos rápidos sin saturar al operador ni perder rendimiento ante actualizaciones frecuentes.</p>
           </div>
           <div class="case-takeaway">
             <span class="case-takeaway-label">Resultado</span>
-            <p>Vista funcional que permite analizar datos, validar el estado de los equipos y comprender el comportamiento del sistema en distintos escenarios operativos.</p>
+            <p>Vista funcional que permite filtrar por zona, validar el estado en tiempo real, descargar archivos del equipo y entrar al histórico con un click.</p>
           </div>
         </div>
       </article>
@@ -188,19 +362,27 @@
 
         <div class="case-body">
           <p>
-            Implementación de la lógica de procesamiento que toma datos crudos —tanto de
-            simulaciones como de equipos en operación— y los transforma en información
-            estructurada para análisis. Incluye consultas SQL para extracción y agregación,
-            servicios backend para el cálculo, y endpoints REST que entregan los resultados
-            a la capa de visualización.
+            Implementación de la lógica de procesamiento que toma datos crudos —tanto de simulaciones como de equipos en operación— y los transforma en información estructurada para análisis. Incluye consultas SQL para extracción y agregación, servicios backend para el cálculo, y endpoints REST que entregan los resultados a la capa de visualización.
           </p>
+
+          <figure class="case-figure">
+            <img src="assets/images/projects/apolo-analisis-eventos.png" alt="Vista de análisis de eventos con gráficas de impedancia de fallas y señales del comtrade" loading="lazy">
+            <figcaption>Análisis de eventos · impedancia de fallas y señales del comtrade.</figcaption>
+          </figure>
+
           <div class="case-takeaway">
             <span class="case-takeaway-label">Reto técnico</span>
-            <p>Estandarizar el flujo de procesamiento para que sirviera tanto a datos de simulación como a datos reales, manteniendo trazabilidad en el análisis de eventos y fallas del sistema.</p>
+            <p>Procesar archivos comtrade (datos crudos de los relés) y generar análisis comparables entre simulación y operación real, manteniendo trazabilidad y reproducibilidad.</p>
           </div>
           <div class="case-takeaway">
             <span class="case-takeaway-label">Resultado</span>
-            <p>Herramientas que entregan datos procesados de forma consistente al frontend, soportando análisis comparativos entre escenarios simulados y mediciones reales.</p>
+            <p>Más de 80 gráficas generadas por evento (impedancia, componentes simétricas, RMS, ángulo y magnitud) que el equipo de protecciones usa para diagnosticar fallas en campo.</p>
+          </div>
+
+          <div class="case-gallery" aria-label="Más capturas del proyecto">
+            <a href="assets/images/projects/apolo-componentes-simetricas.png" class="case-gallery-item" target="_blank" rel="noopener">
+              <img src="assets/images/projects/apolo-componentes-simetricas.png" alt="Gráfica de componentes simétricas de corriente">
+            </a>
           </div>
         </div>
       </article>
@@ -208,11 +390,11 @@
   </section>
 
   <!-- ========================================================================
-       §03 — STACK + CONTACTO
+       §04 — STACK
        ==================================================================== -->
   <section class="section section-skills" id="skills">
     <div class="section-mark">
-      <span class="section-num">§03</span>
+      <span class="section-num">§04</span>
       <span class="section-rule" aria-hidden="true"></span>
       <span class="section-tag">Stack</span>
     </div>
@@ -222,48 +404,70 @@
         Tecnologías y<br>
         <em>herramientas</em>.
       </h2>
+      <p class="lead">
+        Organizadas por nivel de dominio actual. La lista no incluye todo lo que he tocado, solo lo que uso con suficiente solvencia para entregar en producción.
+      </p>
     </div>
 
-    <table class="ledger" aria-label="Stack técnico">
-      <tbody>
-        <tr>
-          <td class="ledger-num">a.</td>
-          <td class="ledger-key">Frontend</td>
-          <td class="ledger-val">JavaScript · HTML · CSS · diseño de mockups, jerarquías visuales y UX para dashboards de monitoreo.</td>
-        </tr>
-        <tr>
-          <td class="ledger-num">b.</td>
-          <td class="ledger-key">Backend</td>
-          <td class="ledger-val">.NET Framework (C#) · Python · diseño y consumo de APIs REST · servicios para procesamiento e integración de datos.</td>
-        </tr>
-        <tr>
-          <td class="ledger-num">c.</td>
-          <td class="ledger-key">Bases de datos</td>
-          <td class="ledger-val">SQL para análisis y reportes · NoSQL · modelado y optimización de consultas.</td>
-        </tr>
-        <tr>
-          <td class="ledger-num">d.</td>
-          <td class="ledger-key">Integración</td>
-          <td class="ledger-val">Consumo de servicios REST para obtención de datos en tiempo real e históricos · pipelines de datos entre servicios.</td>
-        </tr>
-        <tr>
-          <td class="ledger-num">e.</td>
-          <td class="ledger-key">Versionado</td>
-          <td class="ledger-val">Git y GitHub · trabajo en ramas, pull requests y revisiones cruzadas.</td>
-        </tr>
-        <tr>
-          <td class="ledger-num">f.</td>
-          <td class="ledger-key">Metodología</td>
-          <td class="ledger-val">Scrum · trabajo en equipos multidisciplinarios · ceremonias, refinamiento y entrega iterativa.</td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="stack-levels">
+      <div class="stack-level">
+        <div class="stack-level-head">
+          <span class="stack-level-num">N1</span>
+          <h3 class="stack-level-title">Dominio sólido</h3>
+          <p class="stack-level-note">Uso diario · entrego producción sin acompañamiento.</p>
+        </div>
+        <ul class="stack-chips">
+          <li>JavaScript</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>.NET Framework (C#)</li>
+          <li>Python</li>
+          <li>SQL</li>
+          <li>APIs REST</li>
+          <li>Git / GitHub</li>
+          <li>Scrum</li>
+        </ul>
+      </div>
+
+      <div class="stack-level">
+        <div class="stack-level-head">
+          <span class="stack-level-num">N2</span>
+          <h3 class="stack-level-title">Manejo funcional</h3>
+          <p class="stack-level-note">Trabajo cómodo · resuelvo tareas comunes y consulto cuando hace falta.</p>
+        </div>
+        <ul class="stack-chips">
+          <!-- TODO Juan José: ajustar a tu realidad. Estos son ejemplos típicos. -->
+          <li>NoSQL</li>
+          <li>JSON / XML</li>
+          <li>Postman</li>
+          <li>Visual Studio</li>
+          <li>VS Code</li>
+          <li>Diseño de mockups</li>
+        </ul>
+      </div>
+
+      <div class="stack-level">
+        <div class="stack-level-head">
+          <span class="stack-level-num">N3</span>
+          <h3 class="stack-level-title">En aprendizaje</h3>
+          <p class="stack-level-note">Bases puestas · explorando para sumar al stack.</p>
+        </div>
+        <ul class="stack-chips">
+          <!-- TODO Juan José: deja solo lo que sí estás aprendiendo. -->
+          <li>TypeScript</li>
+          <li>React</li>
+          <li>Docker</li>
+          <li>CI/CD</li>
+          <li>Pruebas automatizadas</li>
+        </ul>
+      </div>
+    </div>
 
     <div class="stack-section">
       <div class="stack-item">
         <div class="stack-label">Dominio</div>
         <p class="stack-content">
-          Construcción de aplicaciones web, integración de APIs, manejo de datos y desarrollo de interfaces modernas, eficientes y escalables.
+          Construcción de aplicaciones web para sectores con datos en tiempo real, integración de APIs y desarrollo de interfaces orientadas a operación.
         </p>
       </div>
       <div class="stack-item">
@@ -275,20 +479,60 @@
       <div class="stack-item">
         <div class="stack-label">Idiomas</div>
         <p class="stack-content">
-          Español nativo · Inglés intermedio (lectura técnica fluida).
+          Español nativo · Inglés intermedio — lectura técnica fluida (documentación, código, issues) y conversación funcional.
         </p>
       </div>
     </div>
+  </section>
+
+  <!-- ========================================================================
+       §05 — CONTACTO
+       ==================================================================== -->
+  <section class="section section-contact" id="contact">
+    <div class="section-mark">
+      <span class="section-num">§05</span>
+      <span class="section-rule" aria-hidden="true"></span>
+      <span class="section-tag">Contacto</span>
+    </div>
 
     <div class="contact-block">
-      <h2 class="contact-title">
-        Disponible para <em>nuevos proyectos</em>.
-      </h2>
+      <div class="contact-head">
+        <h2 class="contact-title">
+          Disponible para<br>
+          <em>nuevos proyectos</em>.
+        </h2>
+        <p class="lead">
+          Abierto a oportunidades full-time, híbridas o remotas desde Medellín. Si estás construyendo algo y crees que puedo ayudar, escribime.
+        </p>
+        <ul class="availability">
+          <li><span>Modalidad</span> Híbrido / Remoto / Presencial Medellín</li>
+          <li><span>Jornada</span> Full-time</li>
+          <li><span>Respuesta</span> &lt; 24 h en días hábiles</li>
+        </ul>
+      </div>
 
       <div class="contact-list">
         <div class="contact-row">
           <span class="contact-label">Email</span>
           <a href="mailto:juanjo2arbe@gmail.com" class="contact-value">juanjo2arbe@gmail.com</a>
+        </div>
+        <div class="contact-row">
+          <span class="contact-label">WhatsApp</span>
+          <!-- TODO Juan José: reemplazar 57XXXXXXXXXX con tu número real con código de país -->
+          <a href="https://wa.me/573024668570" class="contact-value" target="_blank" rel="noopener">+57 302 466 8570</a>
+        </div>
+        <div class="contact-row">
+          <span class="contact-label">LinkedIn</span>
+          <a href="https://www.linkedin.com/in/juan-jos%C3%A9-arbelaez-castro-130203265/" class="contact-value" target="_blank" rel="noopener">/in/juan-jose-arbelaez-castro</a>
+        </div>
+        <div class="contact-row">
+          <span class="contact-label">GitHub</span>
+          <a href="https://github.com/Juanjo7z7" class="contact-value" target="_blank" rel="noopener">@Juanjo7z7</a>
+        </div>
+        <div class="contact-row">
+          <span class="contact-label">CV</span>
+          <!-- TODO Juan José: subir PDF a assets/files/CV-Juan-Jose-Arbelaez.pdf -->
+          <a href="assets/files/CV-Juan-Jose-Arbelaez.pdf" class="contact-value" download>Descargar PDF</a>
         </div>
         <div class="contact-row">
           <span class="contact-label">Ubicación</span>
@@ -301,7 +545,7 @@
   <footer class="footer">
     <div class="footer-row">
       <span class="footer-mark">JJA · 2026</span>
-      <span class="footer-mid">Construido con HTML, CSS y JS — sin frameworks</span>
+      <span class="footer-mid">Construido con HTML, CSS y JS — sin frameworks, por elección.</span>
       <span class="footer-end">FIN</span>
     </div>
   </footer>
