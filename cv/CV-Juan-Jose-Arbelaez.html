@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>CV — Juan José Arbeláez Castro · Full Stack Developer</title>
+<meta name="description" content="Full Stack Developer con 3 años de experiencia. .NET (C#), Python, JavaScript, SQL. Medellín, Colombia.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  /* ============================================================================
+     CV · Juan José Arbeláez Castro
+     Two-column · Sidebar oscuro · Inter · Accent cálido · A4 una página
+     ============================================================================ */
+
+  @page {
+    size: A4;
+    margin: 0;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  :root {
+    --gray-900:   #0F141B;
+    --gray-700:   #374151;
+    --gray-600:   #4B5563;
+    --gray-500:   #6B7280;
+    --gray-300:   #D1D5DB;
+    --gray-100:   #F3F4F6;
+    --paper:      #FFFFFF;
+
+    --sidebar:    #0F1828;
+    --sidebar-soft: #1E293B;
+    --on-sidebar: #E2E8F0;
+    --on-sidebar-muted: #94A3B8;
+    --on-sidebar-faint: #64748B;
+
+    --accent:     #E55A2B;
+    --accent-soft: #FCD9C8;
+  }
+
+  html, body {
+    background: var(--paper);
+    color: var(--gray-900);
+    font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 8.6pt;
+    line-height: 1.42;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  a { color: inherit; text-decoration: none; }
+
+  /* ====================================================================
+     PAGE LAYOUT — Single A4 page
+     ==================================================================== */
+  .page {
+    width: 210mm;
+    height: 297mm;
+    background: var(--paper);
+    display: grid;
+    grid-template-columns: 70mm 1fr;
+    overflow: hidden;
+  }
+
+  /* ====================================================================
+     SIDEBAR
+     ==================================================================== */
+  .sidebar {
+    background: var(--sidebar);
+    color: var(--on-sidebar);
+    padding: 12mm 8mm;
+    display: flex;
+    flex-direction: column;
+    gap: 6mm;
+  }
+
+  .sb-h {
+    font-size: 7.6pt;
+    font-weight: 700;
+    letter-spacing: 1.8pt;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 3mm;
+    padding-bottom: 1.5mm;
+    border-bottom: 0.5pt solid var(--accent);
+  }
+
+  .sb-block { display: flex; flex-direction: column; }
+
+  /* CONTACTO */
+  .contact-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2.6mm;
+  }
+
+  .contact-list li {
+    font-size: 7.8pt;
+    line-height: 1.35;
+    color: var(--on-sidebar);
+    word-break: break-word;
+  }
+
+  .contact-list .lab {
+    display: block;
+    font-size: 6.8pt;
+    text-transform: uppercase;
+    letter-spacing: 1pt;
+    color: var(--on-sidebar-muted);
+    margin-bottom: 0.6mm;
+    font-weight: 600;
+  }
+
+  /* STACK */
+  .sr { margin-bottom: 2.8mm; }
+  .sr:last-child { margin-bottom: 0; }
+
+  .sr .lab {
+    display: block;
+    font-size: 6.8pt;
+    text-transform: uppercase;
+    letter-spacing: 1pt;
+    color: var(--on-sidebar-muted);
+    font-weight: 600;
+    margin-bottom: 0.8mm;
+  }
+
+  .sr .v {
+    font-size: 7.8pt;
+    line-height: 1.38;
+    color: var(--on-sidebar);
+  }
+
+  /* IDIOMAS */
+  .lang {
+    margin-bottom: 2.5mm;
+    font-size: 7.8pt;
+    line-height: 1.3;
+  }
+
+  .lang:last-child { margin-bottom: 0; }
+
+  .lang strong {
+    display: block;
+    font-weight: 700;
+    color: var(--paper);
+    margin-bottom: 0.3mm;
+  }
+
+  .lang .meta {
+    font-size: 7.2pt;
+    color: var(--on-sidebar-muted);
+  }
+
+  .lang-bar {
+    margin-top: 1mm;
+    height: 1.6pt;
+    background: var(--sidebar-soft);
+    border-radius: 1pt;
+    overflow: hidden;
+  }
+
+  .lang-bar-fill {
+    height: 100%;
+    background: var(--accent);
+    border-radius: 1pt;
+  }
+
+  /* DISPONIBILIDAD */
+  .avail {
+    margin-bottom: 2mm;
+    font-size: 7.7pt;
+    line-height: 1.3;
+  }
+
+  .avail:last-child { margin-bottom: 0; }
+
+  .avail strong {
+    display: block;
+    font-weight: 700;
+    color: var(--paper);
+    font-size: 6.8pt;
+    text-transform: uppercase;
+    letter-spacing: 0.8pt;
+    margin-bottom: 0.4mm;
+  }
+
+  /* ====================================================================
+     MAIN
+     ==================================================================== */
+  .main {
+    padding: 11mm 11mm 10mm;
+    display: flex;
+    flex-direction: column;
+    gap: 4.5mm;
+    overflow: hidden;
+  }
+
+  /* HEADER */
+  .name-block {
+    padding-bottom: 3.5mm;
+    border-bottom: 0.7pt solid var(--gray-900);
+  }
+
+  .name-block .name {
+    font-size: 22pt;
+    font-weight: 800;
+    line-height: 1.02;
+    letter-spacing: -0.6pt;
+    color: var(--gray-900);
+    margin-bottom: 2mm;
+    white-space: nowrap;
+  }
+
+  .name-block .name .last {
+    font-weight: 400;
+    color: var(--gray-700);
+  }
+
+  .name-block .role {
+    display: inline-flex;
+    align-items: center;
+    gap: 1.5mm;
+    font-size: 8.2pt;
+    font-weight: 600;
+    letter-spacing: 1.2pt;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+
+  .name-block .role .dot {
+    width: 3.2pt;
+    height: 3.2pt;
+    border-radius: 50%;
+    background: var(--accent);
+  }
+
+  /* SECTION TITLE */
+  .main h2 {
+    font-size: 8.8pt;
+    font-weight: 700;
+    letter-spacing: 1.8pt;
+    text-transform: uppercase;
+    color: var(--gray-900);
+    margin-bottom: 2.5mm;
+    padding-bottom: 1.4mm;
+    border-bottom: 0.5pt solid var(--gray-300);
+    position: relative;
+  }
+
+  .main h2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.5pt;
+    width: 14mm;
+    height: 1pt;
+    background: var(--accent);
+  }
+
+  /* PERFIL */
+  .profile p {
+    font-size: 8.7pt;
+    line-height: 1.5;
+    color: var(--gray-900);
+    text-align: justify;
+  }
+
+  .profile strong { font-weight: 600; color: var(--gray-900); }
+
+  /* EXPERIENCE */
+  .job-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 2mm;
+    margin-bottom: 0.6mm;
+  }
+
+  .job-title {
+    font-size: 10pt;
+    font-weight: 700;
+    color: var(--gray-900);
+    letter-spacing: -0.1pt;
+  }
+
+  .job-dates {
+    font-size: 7.4pt;
+    font-weight: 600;
+    color: var(--accent);
+    white-space: nowrap;
+    letter-spacing: 0.4pt;
+    text-transform: uppercase;
+  }
+
+  .job-meta {
+    font-size: 8.2pt;
+    color: var(--gray-700);
+    margin-bottom: 1.8mm;
+    font-weight: 500;
+  }
+
+  .job-meta .company { font-weight: 700; color: var(--gray-900); }
+  .job-meta .sep { color: var(--gray-500); margin: 0 1.3mm; }
+
+  .job-summary {
+    font-size: 8.2pt;
+    line-height: 1.42;
+    color: var(--gray-600);
+    margin-bottom: 2mm;
+    font-style: italic;
+  }
+
+  .bullets {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .bullets li {
+    position: relative;
+    padding-left: 4mm;
+    margin-bottom: 1.2mm;
+    font-size: 8.3pt;
+    line-height: 1.4;
+    color: var(--gray-900);
+  }
+
+  .bullets li:last-child { margin-bottom: 0; }
+
+  .bullets li::before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--accent);
+    font-size: 8pt;
+    font-weight: 700;
+  }
+
+  .bullets strong { font-weight: 700; color: var(--gray-900); }
+
+  /* HIGHLIGHTS (4 cajas) */
+  .highlights {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2mm 3mm;
+  }
+
+  .hl {
+    padding: 2.2mm 2.6mm;
+    background: var(--gray-100);
+    border-left: 1.5pt solid var(--accent);
+  }
+
+  .hl-t {
+    font-size: 7.4pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.6pt;
+    color: var(--accent);
+    margin-bottom: 0.5mm;
+  }
+
+  .hl-x {
+    font-size: 7.8pt;
+    line-height: 1.35;
+    color: var(--gray-900);
+  }
+
+  /* EDUCATION */
+  .edu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2mm 5mm;
+  }
+
+  .edu-i .edu-title {
+    font-size: 8.6pt;
+    font-weight: 700;
+    color: var(--gray-900);
+    margin-bottom: 0.3mm;
+    line-height: 1.25;
+  }
+
+  .edu-i .edu-meta {
+    font-size: 7.6pt;
+    color: var(--gray-700);
+    margin-bottom: 0.4mm;
+  }
+
+  .edu-i .edu-meta .accent {
+    color: var(--accent);
+    font-weight: 600;
+  }
+
+  .edu-i .edu-desc {
+    font-size: 7.4pt;
+    color: var(--gray-500);
+    line-height: 1.3;
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- ====================================================================
+       SIDEBAR
+       ==================================================================== -->
+  <aside class="sidebar">
+
+    <div class="sb-block">
+      <h2 class="sb-h">Contacto</h2>
+      <ul class="contact-list">
+        <li>
+          <span class="lab">Email</span>
+          juanjo2arbe@gmail.com
+        </li>
+        <li>
+          <span class="lab">Teléfono</span>
+          +57 302 466 8570
+        </li>
+        <li>
+          <span class="lab">Ubicación</span>
+          Medellín, Colombia
+        </li>
+        <li>
+          <span class="lab">LinkedIn</span>
+          linkedin.com/in/juan-jose-arbelaez-castro
+        </li>
+        <li>
+          <span class="lab">GitHub</span>
+          github.com/Juanjo7z7
+        </li>
+        <li>
+          <span class="lab">Portafolio</span>
+          juanjo7z7.github.io/Portafolio
+        </li>
+      </ul>
+    </div>
+
+    <div class="sb-block">
+      <h2 class="sb-h">Stack técnico</h2>
+      <div class="sr">
+        <span class="lab">Lenguajes</span>
+        <div class="v">JavaScript · C# · Python · SQL · HTML · CSS</div>
+      </div>
+      <div class="sr">
+        <span class="lab">Frontend</span>
+        <div class="v">JavaScript vanilla · jQuery · HTML5 · CSS3</div>
+      </div>
+      <div class="sr">
+        <span class="lab">Backend</span>
+        <div class="v">.NET Framework 4.x · ASP.NET Core · Minimal APIs · Django · APIs REST</div>
+      </div>
+      <div class="sr">
+        <span class="lab">Bases de datos</span>
+        <div class="v">SQL Server · PostgreSQL · MySQL · MongoDB</div>
+      </div>
+      <div class="sr">
+        <span class="lab">Testing</span>
+        <div class="v">Selenium · Postman · Swagger / OpenAPI</div>
+      </div>
+      <div class="sr">
+        <span class="lab">IA / SDLC</span>
+        <div class="v">GitHub Copilot · ChatGPT · Cursor</div>
+      </div>
+      <div class="sr">
+        <span class="lab">Tooling</span>
+        <div class="v">Git · GitHub · Visual Studio · VS Code</div>
+      </div>
+      <div class="sr">
+        <span class="lab">Metodología</span>
+        <div class="v">Scrum · Code Review · Pull Requests</div>
+      </div>
+    </div>
+
+    <div class="sb-block">
+      <h2 class="sb-h">Idiomas</h2>
+      <div class="lang">
+        <strong>Español</strong>
+        <span class="meta">Nativo</span>
+        <div class="lang-bar"><div class="lang-bar-fill" style="width:100%;"></div></div>
+      </div>
+      <div class="lang">
+        <strong>Inglés</strong>
+        <span class="meta">B1 · Lectura técnica fluida</span>
+        <div class="lang-bar"><div class="lang-bar-fill" style="width:55%;"></div></div>
+      </div>
+    </div>
+
+    <div class="sb-block">
+      <h2 class="sb-h">Disponibilidad</h2>
+      <div class="avail">
+        <strong>Modalidad</strong>
+        Remoto · Híbrido · Presencial Medellín
+      </div>
+      <div class="avail">
+        <strong>Jornada</strong>
+        Tiempo completo
+      </div>
+      <div class="avail">
+        <strong>Inicio</strong>
+        Inmediato
+      </div>
+    </div>
+
+  </aside>
+
+  <!-- ====================================================================
+       MAIN
+       ==================================================================== -->
+  <main class="main">
+
+    <header class="name-block">
+      <div class="name">Juan José <span class="last">Arbeláez Castro</span></div>
+      <span class="role"><span class="dot"></span>Full Stack Developer · 3 años de experiencia</span>
+    </header>
+
+    <section class="profile">
+      <h2>Perfil profesional</h2>
+      <p>
+        Full Stack Developer con 3 años construyendo aplicaciones web end-to-end para clientes corporativos colombianos. Trabajo con <strong>.NET (C#), ASP.NET Core, Python, JavaScript y SQL Server</strong>, con experiencia tanto en el diseño de interfaces de operación como en el procesamiento de datos en tiempo real. Ingresé a Movi Software como practicante en junio de 2023 y fui vinculado a término indefinido en enero de 2024 por desempeño, donde colaboro hoy en un equipo de más de 10 personas.
+      </p>
+    </section>
+
+    <section>
+      <h2>Experiencia profesional</h2>
+      <div class="job">
+        <div class="job-head">
+          <span class="job-title">Desarrollador de Software</span>
+          <span class="job-dates">Jun 2023 — Presente</span>
+        </div>
+        <div class="job-meta">
+          <span class="company">Movi Software</span><span class="sep">·</span>Medellín, Colombia<span class="sep">·</span>Clientes: Celsia · ISA Intercolombia
+        </div>
+        <p class="job-summary">
+          Desarrollo end-to-end de plataformas web para monitoreo y procesamiento de datos en operaciones críticas. Vinculado inicialmente como practicante y contratado a término indefinido por desempeño.
+        </p>
+        <ul class="bullets">
+          <li><strong>Construí</strong> en <strong>JavaScript vanilla y jQuery</strong> la interfaz principal que centraliza el estado de <strong>1.578 equipos</strong> distribuidos en <strong>68 subestaciones</strong> y 5 zonas operativas, soportando <strong>más de 10 referencias de equipos</strong> de distintos fabricantes con actualizaciones en tiempo real.</li>
+          <li><strong>Desarrollé</strong> en <strong>.NET (C#) y Python</strong> el pipeline que procesa archivos de telemetría y genera <strong>más de 87 gráficas por evento</strong> (impedancia, componentes simétricas, RMS, ángulo y magnitud), usadas para diagnosticar fallas con tiempos muy cortos de detección.</li>
+          <li><strong>Diseñé</strong> endpoints REST con <strong>ASP.NET Core (Minimal APIs)</strong> que conectan datos históricos y en tiempo real, soportando reportes de comunicación online/offline y diagnósticos de operación.</li>
+          <li><strong>Optimicé</strong> los tiempos de carga entre vistas de la plataforma, reduciendo la fricción de navegación para <strong>decenas de operadores</strong> que usan la herramienta a diario en turnos de operación.</li>
+          <li><strong>Implementé</strong> pruebas automatizadas con <strong>Selenium</strong> para validar flujos críticos del frontend y asegurar estabilidad entre despliegues.</li>
+          <li><strong>Modelé</strong> bases de datos en <strong>SQL Server</strong> con joins complejos y agregaciones sobre datos de simulación y operación real para reportes comparativos y trazables.</li>
+          <li><strong>Integré</strong> <strong>GitHub Copilot, ChatGPT y Cursor</strong> al ciclo de desarrollo, acelerando código repetitivo, generación de pruebas y revisión asistida de pull requests.</li>
+          <li><strong>Participé</strong> en definición de mockups y validación de jerarquía visual con stakeholders no técnicos para que la información en pantalla soporte la toma de decisiones operativas.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Logros destacados</h2>
+      <div class="highlights">
+        <div class="hl">
+          <div class="hl-t">Retención por desempeño</div>
+          <div class="hl-x">Contratado a término indefinido tras 6 meses de prácticas iniciales.</div>
+        </div>
+        <div class="hl">
+          <div class="hl-t">Escala del producto</div>
+          <div class="hl-x">+1.500 equipos y 68 subestaciones bajo monitoreo en tiempo real.</div>
+        </div>
+        <div class="hl">
+          <div class="hl-t">Productividad con IA</div>
+          <div class="hl-x">Copilot, ChatGPT y Cursor integrados al flujo de PRs y code review.</div>
+        </div>
+        <div class="hl">
+          <div class="hl-t">Formación dual</div>
+          <div class="hl-x">Dos técnicas cursadas en paralelo (SENA + Politécnico Mayor) 2022-2023.</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Formación</h2>
+      <div class="edu">
+        <div class="edu-i">
+          <div class="edu-title">Téc. en Programación de Aplicaciones</div>
+          <div class="edu-meta"><span class="accent">SENA</span> · 2022 – 2023</div>
+          <div class="edu-desc">Programación, bases de datos relacionales, desarrollo de aplicaciones.</div>
+        </div>
+        <div class="edu-i">
+          <div class="edu-title">Téc. en Asistencia en Sistemas</div>
+          <div class="edu-meta"><span class="accent">Politécnico Mayor</span> · 2022 – 2023</div>
+          <div class="edu-desc">Soporte, redes, bases de sistemas (cursado en paralelo con el SENA).</div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+</div>
+
+</body>
+</html>
